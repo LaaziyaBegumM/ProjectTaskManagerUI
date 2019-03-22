@@ -15,7 +15,7 @@ var options = { headers: headersObj};
 export class PMProjectService {  
   project : Project; 
   constructor( private http:HttpClient) { }
-  baseUrl: string = 'http://localhost:5555/api/Project';  
+  baseUrl: string = 'http://localhost:49755/api/Project';  
 
   getProjects():Observable<Project[]>{              
     return this.http.get<Project[]>(this.baseUrl);             
@@ -36,3 +36,4 @@ export class PMProjectService {
    return this.http.put(this.baseUrl+"/"+item.ProjectId, item);
  }
 }
+

@@ -1,4 +1,4 @@
-<h2>Add Task</h2>
+<h2><font color="#6ca8a8">Add Task</font></h2>
 <form class="task-form" #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
     <input type="hidden" name ="ProjectId" #ProjectId="ngModel" [(ngModel)]="taskService.task.ProjectId">
     <input type="hidden" name ="UserId" #UserId="ngModel" [(ngModel)]="taskService.task.UserId">
@@ -188,3 +188,5 @@
         </div>
       </div>      
     </div>
+	
+	

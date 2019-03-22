@@ -15,3 +15,4 @@ export class SearchPipe implements PipeTransform {
   }
 
 }
+

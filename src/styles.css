@@ -1,22 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 form.user-form{
-    background-color:#16afaf;
+    background-color:#6ca8a8;
     border-radius: 4px;
     padding:10px;
 }
 form.project-form{
     
-    background-color:#16afaf;
+    background-color:#6ca8a8;
     border-radius: 2px;
     padding:40px;
 }
 form.task-form{
-    background-color:#16afaf;
+    background-color:#6ca8a8;
     border-radius: 2px;
     padding:40px;
 }
+
+#viewform{
+    background-color:#6ca8a8;
+    border-radius: 2px;
+    padding:40px;
+}
+
 form.updatetask-form{
-    background-color:#16afaf;
+    background-color:#6ca8a8;
     border-radius: 2px;
     padding:40px;
 }
@@ -46,4 +53,8 @@ button:hover,a.btn:hover{
     border:1px solid gray;
     width:100px;
     height:30px;    
+}
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+	background-color: #5da8a8;
 }

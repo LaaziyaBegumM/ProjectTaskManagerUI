@@ -504,7 +504,7 @@ var options = { headers: headersObj };
 var PMProjectService = /** @class */ (function () {
     function PMProjectService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:5555/api/Project';
+        this.baseUrl = 'http://localhost:49755/api/Project';
     }
     PMProjectService.prototype.getProjects = function () {
         return this.http.get(this.baseUrl);
@@ -561,7 +561,7 @@ var options = { headers: headersObj };
 var PMProjectService = /** @class */ (function () {
     function PMProjectService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:5555/api/Project';
+        this.baseUrl = 'http://localhost:49755/api/Project';
     }
     PMProjectService.prototype.getProjects = function () {
         return this.http.get(this.baseUrl);
@@ -618,7 +618,7 @@ var options = { headers: headersObj };
 var PMTaskService = /** @class */ (function () {
     function PMTaskService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:5555/api/Task';
+        this.baseUrl = 'http://localhost:49755/api/Task';
     }
     PMTaskService.prototype.getTasks = function () {
         return this.http.get(this.baseUrl);
@@ -675,7 +675,7 @@ var options = { headers: headersObj };
 var PMUserService = /** @class */ (function () {
     function PMUserService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:5555/api/User';
+        this.baseUrl = 'http://localhost:49755/api/User';
     }
     PMUserService.prototype.getUsers = function () {
         return this.http.get(this.baseUrl);

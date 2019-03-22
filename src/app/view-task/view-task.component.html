@@ -1,7 +1,8 @@
-<h2>View Task</h2>
+<h2><font color="#6ca8a8">View Task</font></h2>
 <br>
-<div>    
-    <div class="form-group ">   
+<div>
+<div id="viewform">    
+    <div class="form-group">   
         <label for="text" class="col-sm-1 col-form-label"> Project: </label>    
         <div class="col-sm-6">
           <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="search.." >                           
@@ -9,6 +10,8 @@
         <br>
         <br>
         </div>
+</div>
+<br>
         <div class="form-group row ">
         <div class="col-sm-8">            
            <label for="text" class="col-sm-1 col-form-label" > Sort: </label>  
@@ -19,7 +22,7 @@
           </div>
       </div>
 <hr>
-<table class="table table-sm table-hover table-striped">  
+<table class="table table-sm table-hover table-bordered">  
   <tr>
     <td>
         <label  style="margin-left:5px">Task</label>
@@ -39,6 +42,10 @@
     <td>
         <label   style="margin-left:50px">Status</label>
     </td> 
+    <td>
+        <label   style="margin-left:50px">Action</label>
+    </td> 
+    
   </tr>
   <tr *ngFor="let task of taskList |search: 'ProjectName' : searchText ; let i= index">
       <td>         
@@ -66,3 +73,4 @@
     </tr>  
   </table>
 </div>
+

@@ -1,4 +1,4 @@
-<h2>Add User</h2>
+<h2><font color="#6ca8a8">Add User</font></h2>
 <form class="user-form" #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
     <input type="hidden" name ="UserId" #UserId="ngModel" [(ngModel)]="userService.user.UserId"> 
     <div class="form-group row">
@@ -45,7 +45,7 @@
           </div>
       </div>
 
-<table class="table table-sm table-hover table-striped">  
+<table class="table table-sm table-hover table-bordered">  
     <tr *ngFor="let user of userList |search: 'FirstName' : searchText ; let i= index">
       <td>
        <label ng-readonly="all" class="disable">{{user.FirstName}}</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,3 +57,4 @@
     </tr>  
   </table>
 </div>
+

@@ -18,7 +18,7 @@ var options = { headers: headersObj};
 export class PMUserService {  
   user : User; 
   constructor( private http:HttpClient) { }
-  baseUrl: string = 'http://localhost:5555/api/User';
+  baseUrl: string = 'http://localhost:49755/api/User';
 
   getUsers():Observable<User[]>{              
     return this.http.get<User[]>(this.baseUrl);             
@@ -40,3 +40,4 @@ export class PMUserService {
    return this.http.put(this.baseUrl+"/"+item.UserId, item);
  }
 }
+

@@ -1,4 +1,4 @@
-<h2>Add Project</h2>
+<h2><font color="#6ca8a8">Add Project</font></h2>
 <form class="project-form" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
     
     <div class="form-group row">
@@ -81,7 +81,7 @@
           </div>
       </div>
 
-<table class="table table-sm table-hover table-striped">  
+<table class="table table-sm table-hover table-bordered">  
     <tr *ngFor="let project of projectList |search: 'ProjectName' : searchText ; let i= index">
       <td>
           <label ng-readonly="all" style="margin-left:20px">Project: </label>
@@ -145,3 +145,5 @@
       </div>
       
     </div>
+	
+	

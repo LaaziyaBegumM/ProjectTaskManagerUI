@@ -4,3 +4,4 @@ export class User {
     public EmployeeId : string;
     public UserId : number
 }
+
